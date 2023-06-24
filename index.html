@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using API for Cats</title>
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <style>
+        .card img {
+            width: 18rem;
+            height: 18rem;
+        }
+
+        .card {
+            width: 18rem;
+            float: left;
+        }
+
+        #updateCat {
+            display: none;
+        }
+    </style>
+  </head>
+  <body class="container">
+    <!-- Your HTML Code below here -->
+    <a href="#" id="top"></a>
+    <form>
+        <input type="hidden" id="id" />
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" id="name" class="form-control" />
+        <label for="breed" class="form-label">Breed:</label>
+        <input type="text" id="breed" class="form-control" />
+        <label for="picture" class="form-label">Picture:</label>
+        <input type="text" id="picture" class="form-control" placeholder="Enter the path for the cat picture." />
+        <button id="createCat" class="btn btn-primary mt-3 mb-5">Create Cat</button>
+        <button id="updateCat" class="btn btn-primary mt-3 mb-5">Update Cat</button>
+    </form>
+    
+    <div id="cats"></div>
+    <!-- ALL OF YOUR JQUERY/BOOTSTRAP/SCRIPT SETUP ARE BELOW HERE. 
+  WE USE CDN'S (content delivery network) INSTEAD OF NODE_MODULES -->
+
+    <!-- Jquery CDN  -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Popper CDN: For dropdowns, popovers, tooltips, etc-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap Script CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Our script -->
+    <script src="./index.js"></script>
+  </body>
+</html>
